@@ -5,27 +5,57 @@
     <title>Document</title>
 </head>
 <body>
-    <table border="1" width="700">
+    <table width="700">
         <tr>
             <td>
                 <h4>Простая форма поиска с вариантами:</h4>
-                <form action="http://fe.it-academy.by/TestForm.php" method="get">
+                <form name="search1" method="get" action="http://fe.it-academy.by/TestForm.php">
                 <fieldset>
                     <legend>Строка поиска</legend>
+                    <label>
+                        <input type="text" name="search1" maxlength="10">
+                        <input type="submit" value="Искать">
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="search1" value="site">на сайте
+                        <input type="radio" name="search1" value="google">в google
+                    </label>
                 </fieldset>
                 </form>
             </td>
             <td>
                 <h4>Простая форма поиска с вариантами:</h4>
-                <form action="http://fe.it-academy.by/TestForm.php" method="get">
+                <form name="search2" method="get" action="http://fe.it-academy.by/TestForm.php">
                 <fieldset>
                     <legend>Строка поиска</legend>
+                    <label>
+                        <input type="text" name="search2" autofocus required placeholder>
+                        <input type="submit" value="Искать">
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="search2" value="site">на сайте
+                        <input type="radio" name="search2" value="google">в google
+                    </label>
                 </fieldset>
                 </form>
             </td>
         </tr>
         <tr>
-            <td></td>
+            <td>
+                <h4>Простая форма авторизации:</h4>
+                <form name="authorization" method="get" action="http://fe.it-academy.by/TestForm.php">
+                <fieldset>
+                    <legend>Авторизируйтесь</legend>
+                    <label>
+                        <p><input type="text" name="login" required placeholder> Логин</p>
+                        <p><input type="text" name="password" required placeholder> Пароль</p>
+                        <input type="submit" value="Войти">
+                    </label>
+                </fieldset>
+                </form>
+            </td>
             <td></td>
         </tr>
         <tr>
