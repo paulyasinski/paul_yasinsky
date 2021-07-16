@@ -5,7 +5,7 @@
     <title>Document</title>
 </head>
 <body>
-    <table width="700">
+    <table border="1" width="700">
         <tr>
             <td>
                 <h4>Простая форма поиска с вариантами:</h4>
@@ -14,12 +14,9 @@
                     <legend>Строка поиска</legend>
                     <label>
                         <input type="text" name="search1" maxlength="10">
-                        <input type="submit" value="Искать">
-                    </label>
-                    <br>
-                    <label>
-                        <input type="radio" name="search1" value="site">на сайте
-                        <input type="radio" name="search1" value="google">в google
+                        <p><input type="submit" value="Искать"></p>
+                        <p><input type="radio" name="radio1" value="site">на сайте
+                        <input type="radio" name="radio1" value="google">в google</p>
                     </label>
                 </fieldset>
                 </form>
@@ -31,12 +28,41 @@
                     <legend>Строка поиска</legend>
                     <label>
                         <input type="text" name="search2" autofocus required placeholder>
-                        <input type="submit" value="Искать">
+                        <p><input type="submit" value="Искать"></p>
+                        <p><input type="radio" name="radio2" value="site">на сайте
+                        <input type="radio" name="radio2" value="google">в google</p>
                     </label>
-                    <br>
+                </fieldset>
+                </form>
+            </td>
+        </tr>
+        <tr valign="top">
+            <td>
+                <h4>Простая форма авторизации:</h4>
+                <form name="authorization" method="get" action="http://fe.it-academy.by/TestForm.php">
+                <fieldset>
+                    <legend>Авторизируйтесь</legend>
                     <label>
-                        <input type="radio" name="search2" value="site">на сайте
-                        <input type="radio" name="search2" value="google">в google
+                        <input type="text" name="login" required placeholder> Логин
+                        <p><input type="text" name="password" required placeholder> Пароль</p>
+                        <p><input type="checkbox" name="checkbox1" value="system">Оставаться в системе</p>
+                        <input type="submit" value="Войти">
+                    </label>
+                </fieldset>
+                </form>
+            </td>
+            <td>
+                <h4>Опрос(голосование):</h4>
+                <form name="vote" method="get" action="http://fe.it-academy.by/TestForm.php">
+                <fieldset>
+                    <legend>Как вам?</legend>
+                    <label>
+                        <p><input type="radio" name="radio3" value="nothing">ничего</p>
+                        <p><input type="radio" name="radio3" value="nobad">неплохо</p>
+                        <p><input type="radio" name="radio3" value="good">хорошо</p>
+                        <p><input type="radio" name="radio3" value="super">супер</p>
+                        <p><input type="submit" value="Отправить"></p>
+                        <input type="hidden" name="date_voite" value="2013.12.31">
                     </label>
                 </fieldset>
                 </form>
@@ -44,22 +70,19 @@
         </tr>
         <tr>
             <td>
-                <h4>Простая форма авторизации:</h4>
-                <form name="authorization" method="get" action="http://fe.it-academy.by/TestForm.php">
+                <h4>Отзыв:</h4>
+                <form name="feedback" method="POST" action="http://fe.it-academy.by/TestForm.php">
                 <fieldset>
-                    <legend>Авторизируйтесь</legend>
+                    <legend>Оставьте Ваш отзыв</legend>
                     <label>
-                        <p><input type="text" name="login" required placeholder> Логин</p>
-                        <p><input type="text" name="password" required placeholder> Пароль</p>
-                        <input type="submit" value="Войти">
+                        <input type="text" name="name" required placeholder> Имя
+                        <p><input type="email" name="email" required placeholder> e-mail</p>
+                        <textarea name="text_area" lang="ru">Форма отправки</textarea>
+                        <p><input type="submit" value="Отправить"></p>
                     </label>
                 </fieldset>
                 </form>
             </td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
             <td></td>
         </tr>
         <tr>
