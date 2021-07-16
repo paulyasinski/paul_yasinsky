@@ -83,7 +83,34 @@
                 </fieldset>
                 </form>
             </td>
-            <td></td>
+            <td valign="top">
+                <h4>Выпадающий и мульти списки:</h4>
+                <form name="roster" method="get" action="http://fe.it-academy.by/TestForm.php">
+                <fieldset>
+                    <legend>Города РБ</legend>
+                    <label>
+                        <select name="list" id="list">
+                            <option value="1">Брест</option>
+                            <option value="2">Минск</option>
+                            <option value="2">Витебск</option>
+                        </select>
+                        <select name="list1" id="list1">
+                            <optgroup label="Города РБ">
+                                <option value="1">Брест</option>
+                                <option value="2">Минск</option>
+                                <option value="2">Витебск</option>
+                            </optgroup>
+                            <optgroup label="Города России">
+                                <option value="4">Москва</option>
+                                <option value="5">Рязань</option>
+                                <option value="9">Магадан</option>
+                            </optgroup>
+                            </select>
+                        <input type="submit" value="Ок">
+                    </label>
+                </fieldset>
+                </form>
+            </td>
         </tr>
         <tr>
             <td></td>
