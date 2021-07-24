@@ -7,16 +7,18 @@
         span{
             float: right;
         }
+
         .left_block{
             width: 15em;
             background-color: lightgray;
             float: left;
         }
+
         .right_block{
             background-color: gray;
-            float: left;
             margin-bottom: 2em;
         }
+
         .bottom_block{
             background-color: lightgray;
             clear: left;
@@ -24,15 +26,19 @@
     </style>
 </head>
 <body>
-    
-    <ul class="left_block">
-        <h3>Блок навигации</h3>
+
+        <div class="left_block">
+            <ul>
+                <h3>Блок навигации</h3>
                 <li>Ширина 15em</li>
                 <li>Должен присутствовать цвет фона</li>
                 <li>Располагается слева</li>
                 <li>Блок навигации наполните контентом достаточным, чтобы по высоте он начинал захватывать вторую статью</li>
                 <li>Блок навигации наполните контентом достаточным, чтобы по высоте он начинал захватывать вторую статью</li>
             </ul>
+        </div>
+        
+
             <div class="right_block">
                 <h3>Статья 1</h3>
                         <p>Размер блока:</p>
@@ -40,6 +46,7 @@
                         <p>Должен присутствовать цвет фона</p>
                         <p>Во всех статьях сделайте отступ снизу от соседей равный 2em, при помощи свойства margin-bottom</p>
             </div>
+            
             <div class="right_block">
                 <h3>Статья 2</h3>
                         <p>Размер блока:</p>
@@ -49,9 +56,9 @@
                         <p>Картинка вставлена при помощи тега, плавание организованно по правому краю внутри данной статьи для этой картинки</p>
                         <span><img src="icon_mail.png"></span>
             </div>
+
             <div class="bottom_block">
                         <p>Нижний блок. Подвал. Занимает всю доступную ширину. Высота определяется помещённым внутрь контентом.</p>
             </div>
-    
 </body>
 </html>

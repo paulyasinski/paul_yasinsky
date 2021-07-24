@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <style>
+        .flex_container{
+            display: flex;
+            flex-direction: column;
+
+        }
         span{
             float: right;
         }
@@ -14,18 +19,17 @@
         }
         .right_block{
             background-color: gray;
-            float: left;
             margin-bottom: 2em;
         }
         .bottom_block{
             background-color: lightgray;
-            clear: left;
+            clear: both;
         }
     </style>
 </head>
 <body>
-    
-    <ul class="left_block">
+    <div class="left_block">
+    <ul>
         <h3>Блок навигации</h3>
                 <li>Ширина 15em</li>
                 <li>Должен присутствовать цвет фона</li>
@@ -33,6 +37,9 @@
                 <li>Блок навигации наполните контентом достаточным, чтобы по высоте он начинал захватывать вторую статью</li>
                 <li>Блок навигации наполните контентом достаточным, чтобы по высоте он начинал захватывать вторую статью</li>
             </ul>
+        </div>
+        
+        <div class="flex_container">
             <div class="right_block">
                 <h3>Статья 1</h3>
                         <p>Размер блока:</p>
@@ -51,6 +58,7 @@
             </div>
             <div class="bottom_block">
                         <p>Нижний блок. Подвал. Занимает всю доступную ширину. Высота определяется помещённым внутрь контентом.</p>
+            </div>
             </div>
     
 </body>
