@@ -4,30 +4,29 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <style>
-        .flex_container{
+        .flex_container_right{
             display: flex;
             flex-direction: column;
+            background-color: gray;
+            margin-bottom: 2em;
         }
         span{
             float: right;
         }
-        .left_block{
+        .flex_container_left{
+            display: flex;
             width: 15em;
             background-color: lightgray;
-            float: left;
+            align-items: flex-start;
         }
-        .right_block{
-            background-color: gray;
-            margin-bottom: 2em;
-        }
-        .bottom_block{
+        .flex_container_bottom{
+            display: flex;
             background-color: lightgray;
-            clear: both;
         }
     </style>
 </head>
 <body>
-    <div class="left_block">
+    <div class="flex_container_left">
     <ul>
         <h3>Блок навигации</h3>
                 <li>Ширина 15em</li>
@@ -38,15 +37,15 @@
             </ul>
         </div>
         
-        <div class="flex_container">
-            <div class="right_block">
+        <div class="flex_container_right">
+            <div>
                 <h3>Статья 1</h3>
                         <p>Размер блока:</p>
                         <p>Занимает всю доступную ширину</p>
                         <p>Должен присутствовать цвет фона</p>
                         <p>Во всех статьях сделайте отступ снизу от соседей равный 2em, при помощи свойства margin-bottom</p>
             </div>
-            <div class="right_block">
+            <div>
                 <h3>Статья 2</h3>
                         <p>Размер блока:</p>
                         <p>Занимает всю доступную ширину</p>
@@ -56,7 +55,7 @@
                         <span><img src="icon_mail.png"></span>
             </div>
             </div>
-            <div class="bottom_block">
+            <div class="flex_container_bottom">
                 <p>Нижний блок. Подвал. Занимает всю доступную ширину. Высота определяется помещённым внутрь контентом.</p>
     </div>
     
